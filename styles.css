@@ -67,29 +67,39 @@ p {
 .educationrow{
     margin-top:20px;
     margin-bottom: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
+/* 
 .ccnyimage{
     float:left;
     width:25%;
     padding-right:50px;
     margin-left:20%;
 }
-
 .bmccimage{
     width: 25%;
     float:left;
     padding-right:50px;
     margin-left:20%;
+} */
+
+.educationrow img {
+    width: 100%;
 }
 
 .portfoliosrow{
-    padding: 100px 200px 100px 200px;
+    /* padding: 100px 200px 100px 200px; */
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .skillsrow{
     color:white;
-    padding: 50px 100px 0 100px;
+    /* padding: 50px 100px 0 100px; */
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .schooldescribtion{
@@ -135,4 +145,56 @@ p {
 .facebookicon{
     width:7%;
  
+}
+
+@media (max-width: 991px) {
+    .portfoliosrow{
+        max-width: 800px;
+    }
+
+    .portfoliosimage {
+        height: 30vh;
+    }
+
+    .card-portfolio {
+        min-width: 220px;
+    }
+
+    .checkimage {
+        width: 5%;
+    }
+}
+
+@media (max-width: 767px) {
+    .portfoliosrow {
+        max-width: 350px;
+    }
+
+    .greating {
+        font-size: large;
+    }
+
+    .mytitle {
+        font-size: medium;
+    }
+
+    .profile {
+        width: 30%;
+    }
+
+    .educationrow img {
+        width: 50%;
+    }
+
+    .githubicon {
+        width: 15%;
+    }
+
+    .linkedinicon {
+        width: 15%;
+    }
+
+    .facebookicon {
+        width: 25%;
+    }
 }
